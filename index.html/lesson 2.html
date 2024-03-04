@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../index.css/lesson 2.css" />
+    <title>CSS SELECTORS</title>
+  </head>
+  <body>
+    <h1><center>CSS SELECTOR</center></h1>
+    <p>
+      A <small>css selector</small> is a pattern or expression that specifies
+      which HTML elements should be selected and styled on a webpage. It allows
+      specific elements to be targeted or groups of elements to apply styles.
+    </p>
+    <p>
+      CSS selectors play a key role in the cascading nature of styles, where
+      rules are applied in a specific order, affecting the appearance of
+      elements on the page.
+    </p>
+    <h2><u>TYPES FOR CSS SELECTORS</u></h2>
+    <h3>1.&NonBreakingSpace;&NonBreakingSpace; BASIC CSS SELECTOR</h3>
+    <table border="2">
+      <caption>
+        <marquee behavior="alternate" direction="right"
+          >BASIC CSS SELECTOR</marquee
+        >
+      </caption>
+      <thead>
+        <th>BASIC TYPE OF CSS SELECTOR</th>
+        <th>DESCRIPTION</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bold">Universal Selector</td>
+          <td>
+            the <i>universal selector</i> is a wildcard character that selects
+            all HTML elements on a webpage. It is used to apply styles globally
+            to every element. <i>universal selector</i> is denoted by the
+            asterik (*) .
+          </td>
+        </tr>
+        <tr>
+          <td class="bold">Element Selector</td>
+          <td>
+            an <i>element selector</i> is a basic selector that targets HTML
+            elements based on their tag name. It selects and styles all instance
+            of a particular HTML element.
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" class="bold">ID Selector</td>
+          <td>
+            an <i>ID selector</i> is used to target a specific HTML element
+            based on its unique <i>ID attribute</i>. The <i>ID selector</i> is
+            denoted by a hash (#) followed by the value.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            The id of an element is unique within a page, so the id selector is
+            used to select one unique element!
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" class="bold">Class Selector</td>
+          <td>
+            a <i>class selectors</i> is used to target HTML elements based on
+            their <b>class attribute</b>, <i>class selectors</i> are denoted by
+            a dot (.) followed by the class name. It selects all elements with
+            that class attribute so that unique CSS declarations can be applied
+            to those specific elements without affecting other elements on the
+            page.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i>class selector</i> can be used multiple times to select elements
+            on a page unlike <i>id selectors</i>.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>2. &NonBreakingSpace;&NonBreakingSpace; COMBINATION SELECTORS</h3>
+    <p>
+      A <small>combination selector</small> is a selector that combines multiple
+      basic selectors to target specific elements or relationships between
+      elements in a more precise way.
+    </p>
+    <table border="2">
+      <caption>
+        <marquee behavior="alternate" direction="left"
+          >COMBINATION SELECTORS and DESCRIPTION</marquee
+        >
+      </caption>
+      <thead>
+        <th>COMBINATION TYPE OF CSS SELECTORS</th>
+        <th>DESCRIPTION</th>
+      </thead>
+      <tbody>
+        <td class="bold">Descendant Selector</td>
+        <td>
+          The <i>descendant selector</i> is a way to select elements that are
+          located somewhere underneath other elements. It involves placing a
+          space between the selectors.
+        </td>
+        <tr>
+          <td class="bold">Child Selector</td>
+          <td>
+            The <i>child selector</i> denoted with (>) symbol is used to select
+            elements that are direct children of a specified parent element. It
+            only targets elements that are one level deep in the HTML hierachy.
+          </td>
+        </tr>
+        <tr>
+          <td class="bold">Adjacent Sibling Selector</td>
+          <td>
+            The <i>adjacent sibling selector</i> denoted with (+) is used to
+            select an element that is immediately preceded by a specified
+            element. It targets an element that shares the same parent and comes
+            directly after the specified element in the HTMl structure.
+          </td>
+        </tr>
+        <tr>
+          <td class="bold">General Sibling Selector</td>
+          <td>
+            The <i>general sibling selector</i> denoted with a tilde (~) is used
+            to select element and share the same parent. It targets elements
+            that come after the specified element, not necessarily immediately
+            after.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>3. &NonBreakingSpace;&NonBreakingSpace; ATTRIBUTE SELECTOR</h2>
+    <p>
+      Attributes Selectors are patterns that allows the selection of HTML
+      elements based on the presence or value of their attributes. These
+      selectors contribute to the flexibility and specificity of style rules.
+    </p>
+    <table border="">
+      <caption>
+        <marquee behavior="alernate" direction="right"
+          >ATTRIBUTE SELECTOR and DESCRIPTION</marquee>
+      </caption>
+      <thead>
+        <th>ATTRIBUTE TYPE OF CSS SELECTOR</th>
+        <th>DESCRIPTION</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="bold">[attr]</td>
+          <td>Represents elements with an attribute name of <i>attr</i>.</td>
+        </tr>
+        <tr>
+          <td class="bold">[attr=value]</td>
+          <td>
+            Represents elements with an attribute name of <i>attr</i> whose
+            value is exactly <i>value</i>.
+          </td>
+        </tr>
+        <tr>
+          <td class="bold">[attr~=value]</td>
+          <td>
+            Represents elements with an attribute name of <i>attr</i> whose
+            <i>value</i> is a whitespace-separated list of words, one of which
+            is exactly <i>value</i>.
+          </td>
+        </tr>
+        <tr>
+          <td class="bold">[attr|=value]</td>
+          <td>
+            Represents elements with an attribute name of <i>attr</i> whose
+            value can be exactly value or can begin with value immediately
+            followed by a hyphen, <small>-</small>.
+          </td>
+        </tr>
+        <tr>
+          <td class="bold">[attr^=value]</td>
+          <td>
+            Represents elements with an attribute name of <i>attr</i> whose
+            value is prefixed (preceded) by <i>value</i>.
+          </td>
+        </tr>
+        <tr>
+          <td class="bold">[attr$=value]</td>
+          <td>
+            Represents elements with an attribute name of <i>attr</i> whose
+            value is suffixed (followed) by <i>value.</i>
+          </td>
+        </tr>
+        <tr>
+          <td class="bold">[attr*=value]</td>
+          <td>
+            Represents elements with an attribute name of <i>attr</i> whose
+            value contains at least one occurrence of <i>value</i> within the
+            string.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

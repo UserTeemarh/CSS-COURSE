@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css/lesson 6.css">
+    <link rel="stylesheet" href="/index.css/lesson 8.css">
+    <title>Flex box</title>
+</head>
+<body>
+
+    <h1>FLEXBOX</h1>
+    <p>Flexbox, short for "flexible Box Layout". is a layout model designed to provide a more efficient way to arrange and align elements within a container, especially when dealing with dynamic or unknown sizes of the elements. It aims to provide a more efficient and predictable way to  distribute space among items in a container.</p>
+    <p>Flexbox introduces the concept of <i>Flex containers and Flex items.</i> The container element becomes  a <i>flex container</i>, and its child elements becomes <i>flex items</i></p>
+    <p>Flexbox provides a powerful and intuitive way to create flexible and responsive layouts, reducing the reliance on floats, positioning, and complex CSS hacks. It simplifies the process of creating complex layouts.</p>
+    <h2><u>TYPES OF FLEXBOX PROPERTIES</u></h2>
+    <table border="2">
+        <caption><marquee behavior="alternate" direction="right">FLEXBOX PROPERTIES AND DESCRIPTION</marquee></caption>
+        <thead>
+            <th>FLEXBOX PROPERTY</th>
+            <th>DESCRIPTION</th>
+            <th>VALUE(s)</th>
+        </thead>
+        <tbody>
+            <th>display:</th>
+            <td>It  is used to define an element as a flex container. It's the fundamental property for using flexbox layout.</td>
+            <td>
+                <ul>
+                    <li>flex</li>
+                    <li>inline-flex</li>
+                </ul>
+            </td>
+            <tr>
+                <th>flex-direction</th>
+                <td>It determines the direction of the main axis within a flex container. This main axis defines the direction in which flex items are laid out.</td>
+                <td>
+                    <ul>
+                        <li>row</li>
+                        <li>row-reverse</li>
+                        <li>column</li>
+                        <li>column-reverse</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>flex-wrap</th>
+                <td>It determines whether flex items are forced into a single line or can be wrapped onto multiple lines within the flex container when there isn't enough space.</td>
+                <td>
+                    <ul>
+                        <li>wrap</li>
+                        <li>nowrap</li>
+                        <li>wrap-reverse</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>flex-flow</th>
+                <td>It is a shorthand property that combines the <i>flex-direction</i> and <i>flex-wrap</i> properties in a single declaration.</td>
+                <td>
+                    <ul>
+                        <li>flex-direction, flex-wrap</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>justify-content</th>
+                <td>It is used to align flex items alogn the main axis of the flex container. It controls the distribution of space between and around flex items when they don't take up all the available space on the main axis.</td>
+                <td>
+                    <ul>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                        <li>space-evenly</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>align-items</th>
+                <td>It is used to align flex items along the cross axis of the flex container. It controls how flex items are aligned vertically (for a <i>flex-direction: row layout</i>) or horizontally (for a <i>flex-direction: column layout).</td>
+                <td>
+                    <ul>
+                        <li>stretch</li>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>baseline</li>
+                    </ul>
+                </td>    
+            </tr>
+            <tr>
+                <th>align-content</th>
+                <td>It is used to align a flex container's lines within the flex container when there's extra space in the cross-axis. It only has an effect when there are multiple lines of flex items within the flex container.</td>
+                <td>
+                    <ul>
+                        <li>stretch</li>
+                        <li>flex-start</li>
+                        <li>flex-end</li>
+                        <li>center</li>
+                        <li>space-between</li>
+                        <li>space-around</li>
+                    </ul>
+                </td> 
+            </tr>
+            <tr>
+                <th>flex-grow</th>
+                <td>It is used to specify how much a flex item should grow relative to the other flex items within the same flex container when there is extra space available along the main axis. It determines the proportion of the available space that a flex item should occupy.</td>
+                <td>
+                    <ul>
+                        <li>number</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>flex-shrink</th>
+                <td>It is used to specify how a flex item shrink relative to the other flex items within the same flex container when there is not enough space along the main axis. It determines the ability of a flex item to shrink in order to fit into the available space.</td>
+                <td>
+                    <ul>
+                        <li>number</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>flex-basis</th>
+                <td>It is used to specify the initial main size of a flex item before free space is distributed. It sets the initial size of a flex item along the main axis before considering the  <i>glex-grow and flex-shrink</i> properties</td>
+                <td>
+                    <ul>
+                        <li>Number with units</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>flex:</th>
+                <td>The <small>flex</small> property is used to combine <i>flex-grow, flex-shrink, and flex-basis</i> in a single declaration.</td>
+                <td>
+                    <ul>
+                        <li>flex-grow, flex-shrink, flex-basis</li>
+                    </ul>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+    
+
+</body>
+</html>

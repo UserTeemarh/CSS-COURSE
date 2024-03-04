@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 22px;
+}
+button {
+    padding: 20px;
+    font-size: 20px;
+    transform: skewY(200%);          
+}
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    transition: all 3s linear 2s;
+}
+h1:hover {
+    color: yellow;
+    
+}    
+.box {
+    width: 300px;
+    height: 70px;
+    background: linear-gradient(pink,yellow, brown, blue);
+    filter: blur(3px);
+    -webkit-box-reflect:  below 15px linear-gradient(transparent, transparent, white);
+    margin: 50px;
+}
+.parent {
+    width: 500px;
+    height: 250px;
+    background: brown;
+    transition: all 2s ease-in-out;
+
+}
+.parent:hover {
+    transform: skew(50deg, -50deg);
+}
+.cover {
+    width: 500px;
+    height: 250px;
+    background: teal;
+    transition: all 2s ease-in-out;
+}
+dt, dl {
+    color: antiquewhite;
+    text-shadow: 0 1.5rem 3rem rgba(255,255,255,0.5444);
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+dt, dl::before {
+    content: open-quote;
+}
+dt,
+ dl::after {
+    content:  close-quote;
+}
+  /* transform: matrix(1,-2, 2, 1, 0, 2); */     
+  /* transform: matrix(scaleX(1) skewY(), skewX(), scaleY(), translateX(), translateY()); */

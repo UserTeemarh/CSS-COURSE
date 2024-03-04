@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+mark {
+    background: white;
+    color: black;
+    padding: 2px;
+}  
+h1 {
+    text-align: center; 
+    text-decoration: underline; 
+    text-transform: uppercase;
+}
+h3 {
+    text-transform: capitalize;
+    font-size: 30px;
+    text-decoration: underline;
+}
+table {
+    border: 1px ridge rgba(235, 220, 220, 0.5);
+    border-collapse: collapse;
+}
+table, caption, thead, th, tbody, tr td {
+    border: 1px ridge rgba(235, 220, 220, 0.5);
+    padding: 10px;
+    font-size: 20px;
+}
+td u {
+    color: rgba(235, 220, 220, 0.911);
+    font-weight: 300;
+}
+.specify {
+    background: rgba(29, 26, 26, 0.5); 
+}

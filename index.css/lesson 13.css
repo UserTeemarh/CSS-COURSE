@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+.boo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+dt, dl {
+    font-weight: 900;
+    font-size: 30px;
+    text-decoration: underline;
+}
+ul li {
+    font-size: 20px;
+}

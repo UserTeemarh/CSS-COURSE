@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css/lesson 6.css" />
+    <title>CSS PROPERTIES</title>
+  </head>
+  <body>
+    <section>
+      <h1><center>CSS PROPERTIES</center></h1>
+      <p>CSS properties assign a style or behaviour to an HTML element.</p>
+      <h2><u>FONT PROPERTIES</u></h2>
+      <p>
+        Font properties are used to control various aspects of text rendering.
+      </p>
+      <table border="2">
+        <caption>
+          <marquee behavior="alternate" direction="left"
+            >FONT PROPERTIES AND DESCRIPTION</marquee
+          >
+        </caption>
+        <thead>
+          <th>FONT PROPERTY</th>
+          <th>DESCRIPTION</th>
+          <th>VALUE(s)</th>
+        </thead>
+        <tbody>
+          <th>font-size:</th>
+          <td>
+            The <small>font-size</small> property defines the size of the font
+            used for text content within an element. It can be set to various
+            units. Increasing the value makes the text larger, while decreasing
+            it makes the text smaller.
+          </td>
+          <td>
+            <span
+              ><center><u>UNITS</u></center></span
+            >
+            <ul>
+              <li>pixels (px)</li>
+              <li>points (pt)</li>
+              <li>percentages (%)</li>
+            </ul>
+          </td>
+          <tr>
+            <th>font-style</th>
+            <td>
+              The <small>font-style</small> is used to specify the style of the
+              font within an element.
+            </td>
+            <td>
+              <ul>
+                <li>normal</li>
+                <li>italic</li>
+                <li>oblique</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>font-family</th>
+            <td>
+              The <small>font-family</small> is used to specify the typeface or
+              font family that will be applied to text content within an
+              element. It allows developers to define a prioritized list of font
+              family names, seperated by commas, in case the preffered is not
+              available on the user's system.
+            </td>
+            <td>font name</td>
+          </tr>
+          <tr>
+            <th>font-weight</th>
+            <td>
+              The <small>font-weight</small> property is uded to specify the
+              thickness or boldness of the font. It accepts numeric values or
+              predefined keywords.
+            </td>
+            <td>
+              <ul>
+                <li>normal</li>
+                <li>bold</li>
+                <li>lighter</li>
+                <li>bolder</li>
+                <li>
+                  Numeric values ranging from 100 to 900.
+                  <ul>
+                    <li>100 to 500 represents lighter weights</li>
+                    <li>600 to 900 represents bolder weights.</li>
+                  </ul>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>font-variant</th>
+            <td>
+              The <small>font-variant</small> property is used to control the
+              use of small caps or normal font variants.
+            </td>
+            <td>
+              <ul>
+                <li>normal</li>
+                <li>small-caps</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>text-transform</th>
+            <td>
+              The <small>text-transform</small> property is used to specify how
+              the text content within an element should be transformed in terms
+              of capitalization.
+            </td>
+            <td>
+              <ul>
+                <li>none</li>
+                <li>uppercase</li>
+                <li>lowercase</li>
+                <li>capitalize</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>text-decoration</th>
+            <td>
+              The <small>text-decoration</small> property is used to add visual
+              effects to text. It is commonly used to enchance the visual
+              appearance of links, emphasize certain text, or denote formatting
+              within an element.
+            </td>
+            <td>
+              <ul>
+                <li>none</li>
+                <li>underline</li>
+                <li>overflow</li>
+                <li>line-through</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>text-shadow</th>
+            <td>
+              The <small>text-shadow</small> property adds a shadow effect to
+              the text. It allows the horizontal and vertical offset to be
+              specified as well as the blur radius and color.
+            </td>
+            <td>
+              <ul>
+                <li>h-shadow, v-shadow, blur-radius, color</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>white-space</th>
+            <td>
+              The <small>white-space</small> property controls how white spaces,
+              line breaks, and tabs are processed and rendered within an
+              element's content. It can be used to control text-wrapping,
+              preserve, formatting, and manage white space behavior.
+            </td>
+            <td>
+              <ul>
+                <li>normal</li>
+                <li>nowrap</li>
+                <li>pre</li>
+                <li>pre-line</li>
+                <li>pre-wrap</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>line-height</th>
+            <td>
+              The <small>line-height</small> property specifies the height of an
+              element.
+            </td>
+            <td>
+              <ul>
+                <li>normal</li>
+                <li>length</li>
+                <li>%</li>
+                <li>Numeric value</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>letter-spacing</th>
+            <td>
+              The <small>letter-spacing</small> is used to sets the horizontal
+              spacing behavior between text characters. This value is added to
+              the natural spacing between characters while rendering the text
+            </td>
+            <td>
+              <ul>
+                <li>normal</li>
+                <li>length</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>word-spacing</th>
+            <td>
+              The <small>word-spacing</small> property increases or decreases
+              the white space between words
+            </td>
+            <td>
+              <ul>
+                <li>Numeric value</li>
+                <li>normal</li>
+                <li>length</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>text-indent</th>
+            <td>
+              The <small>text-indent</small> property is used to indent the
+              first line of text in an element.
+            </td>
+            <td>
+              <ul>
+                <li>length</li>
+                <li>%</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- LIST PROPERTIES¿ -->
+    <section>
+      <h2><u>LIST PROPERTIES</u></h2>
+      <p>The list properties are used to specified the type of the item marker, such as ordered type or unordered type. It detemines the apperance of the list item marker of a list element.</p>
+      <table border="2">
+        <caption>
+          <marquee behavior="alternate" direction="left">
+            LIST PROPERTIES AND DESCRIPTION</marquee
+          >
+        </caption>
+        <thead>
+          <th>LIST PROPERTY</th>
+          <th>DESCRIPTION</th>
+          <th>VALUE(s)</th>
+        </thead>
+        <tbody>
+          <th>list-style-image</th>
+          <td>
+            It is used to set an image as the marker for list items (such as
+            bullets or numbers) or ordered list. Instead of using the default
+            markers provided by the browser.
+          </td>
+          <td>
+            <ul>
+              <li>URL</li>
+              <li>none</li>
+              <li>inherit</li>
+            </ul>
+          </td>
+          <tr>
+            <th>list-style-position</th>
+            <td>
+              It is used to specify the position of the markers in a list
+              relative to the list item's content.
+            </td>
+            <td>
+              <ul>
+                <li>inside</li>
+                <li>outside</li>
+                <li>inherit</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>list-style-type</th>
+            <td>
+              It is used to specify the type of marker used for list-items in
+              ordered or unordered lists. It determines the appearance of the
+              marker before each item.
+            </td>
+            <td>
+              <ul>
+                <li>none</li>
+                <li>disc</li>
+                <li>circle</li>
+                <li>decimal</li>
+                <li>decimal-leading-zero</li>
+                <li>armenian</li>
+                <li>georgian</li>
+                <li>upper-roman. e.t.c</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>list-style</th>
+            <td>
+              It sets all list-properties for a list in one declaration. It
+              combines the
+              <small
+                >list-style-image, list-style-position, list-style-type</small
+              >
+              properties into a single line.
+            </td>
+            <td>
+              <ul>
+                <li>list-style-image, list-style-position, list-style-type</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- DIMENSION PROPERTIES -->
+    <h2><u>DIMENSION PROPETIES</u></h2>
+    <p>
+      Dimension properties refer to a set of attributes that control the spatial
+      charateristics of HTML elements on a webpage.
+    </p>
+    <table border="2">
+      <caption>
+        <marquee behavior="alternate" direction="right"
+          >DIMENSION PROPERTIES</marquee
+        >
+      </caption>
+      <thead>
+        <th>DIMENSION PROPERTY</th>
+        <th>DESCRIPTION</th>
+        <th>VALUE(s)</th>
+      </thead>
+      <tbody>
+        <th>width</th>
+        <td>
+          The <small>width</small> property is used to specify the horizontal
+          size of an element. It determines how wide an element should be
+          rendered within its containing parent element element or the viewport.
+          The number value assigned to the <small>width</small> property can be
+          specified using various units.
+        </td>
+        <td>
+          <span><u>UNITS</u></span>
+          <ul>
+            <li>pixels (px)</li>
+            <li>percentages(%)</li>
+            <li>viewport(vw)</li>
+            <li>em</li>
+            <li>rem</li>
+          </ul>
+        </td>
+        <tr>
+          <th>height</th>
+          <td>
+            The <small>height</small> property is used to specify the vertical
+            size of an element. It determines how tall/long an element should be
+            rendered within its containing parent element element or the
+            viewport. The number value assigned to the
+            <small>height</small> property can be specified using various units.
+          </td>
+          <td>
+            <span><u>UNITS</u></span>
+            <ul>
+              <li>pixels (px)</li>
+              <li>percentages(%)</li>
+              <li>viewport(vw)</li>
+              <li>em</li>
+              <li>rem</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>max-width</th>
+          <td>
+            The <small>max-width</small> property sets the maximum width of an
+            element. It specifies the maximum allowable width an element can
+            have. preventing it from expanding beyond that limit.
+            <small>max-with</small> property can be specified using various
+            units.
+          </td>
+          <td>
+            <span><u>UNITS</u></span>
+            <ul>
+              <li>pixels (px)</li>
+              <li>percentages(%)</li>
+              <li>viewport(vw)</li>
+              <li>em</li>
+              <li>rem</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>min-width</th>
+          <td>
+            The <small>min-width</small> It specifies the smallest allowable
+            width an element can have, ensuring that it does not shrink below
+            that limit. The <small>min-width</small> property can be specified
+            using various units.
+          </td>
+          <td>
+            <span><u>UNITS</u></span>
+            <ul>
+              <li>pixels (px)</li>
+              <li>percentages(%)</li>
+              <li>viewport(vw)</li>
+              <li>em</li>
+              <li>rem</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>max-height</th>
+          <td>
+            The <small>max-height</small> property sets the maximum height of an
+            element. It specifies the maximum allowable height an element can
+            have, preventing it from expanding beyond that limit.
+            <small>max-height</small> property can be specified using various
+            units.
+          </td>
+          <td>
+            <span><u>UNITS</u></span>
+            <ul>
+              <li>pixels (px)</li>
+              <li>percentages(%)</li>
+              <li>viewport(vh)</li>
+              <li>em</li>
+              <li>rem</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th>min-height</th>
+          <td>
+            The <small>min-height</small> It specifies the short allowable
+            height an element can have, ensuring that it does not shrink below
+            that limit. The <small>min-height</small> property can be specified
+            using various units.
+          </td>
+          <td>
+            <span><u>UNITS</u></span>
+            <ul>
+              <li>pixels (px)</li>
+              <li>percentages(%)</li>
+              <li>viewport(vh)</li>
+              <li>em</li>
+              <li>rem</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <fieldset>
+      <legend>Practice Project</legend>
+      <ul>
+        <li>create two files, one should be html and other for css.</li>
+        <li>link the css file to the html file</li>
+        <li>
+          select the body, using element selector. the background should be
+          image
+        </li>
+        <li>
+          set the image to <ins>no-repeat</ins> and make sure the image
+          <ins>cover</ins> the whole page
+        </li>
+        <li>use h1 to write this sentence 'welcome to my website'.</li>
+        <li>set the text to center using css property.</li>
+        <li>
+          let the background be image and make sure the background is clip to
+          the text
+        </li>
+        <li>wrap lorem*40 into a paragraph element</li>
+        <li>set the paragraph to capitalize using text-transform property</li>
+      </ul>
+    </fieldset>
+  </body>
+</html>

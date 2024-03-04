@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: cursive;
+}
+h1 {
+  letter-spacing: 30px;
+  font-size: 60pt;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  text-shadow: 2px 2px 4px #fecefd;
+}
+ul li {
+  background-color: bisque;
+  line-height: 30px;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+.test {
+  font-variant: small-caps;
+  text-decoration: underline;
+  line-height: 50px;
+  background-color: cadetblue;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+p {
+  white-space: pre-wrap;
+  word-spacing: 30px;
+}
+dl {
+  text-indent: 30px;
+}

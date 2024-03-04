@@ -1,0 +1,53 @@
+body {
+    background: black;
+    color: white;
+    font-size: 25px;
+}
+::selection {
+    background-color: white;
+    color: black;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+}
+fieldset ul li {
+    margin: 10px;
+}
+fieldset ul li::first-letter {
+    text-transform: capitalize;
+}
+table, thead, th, tbody, tr td {
+    border-collapse: collapse;
+    border: 2px solid gray; 
+    font-size: 22px;
+}
+td {
+    padding: 10px 10px;
+    text-align: justify;
+}
+h3 {
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+fieldset {
+    margin-top: 2rem;
+}
+ul li ul li {
+    font-size: 15px;
+    word-spacing: none;
+}
+td ul li {
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    table, thead, th, tbody, tr td {
+        border-collapse: collapse;
+        border: 2px solid gray; 
+        font-size: 17px;
+    }
+    body {
+        font-size: 20px;
+    }
+}

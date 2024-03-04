@@ -1,0 +1,27 @@
+body {
+    background: black;
+    color: whitesmoke;
+    font-size: 23px;
+}
+table, tbody, th, tr td {
+    border-collapse: collapse;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+}
+mark {
+    background: white;
+} 
+h1, h3 {
+    text-transform: capitalize;
+}
+h3 {
+    text-decoration: underline;
+}
+ol li {
+    text-transform: capitalize;
+}
+.t1 {
+    background:white;
+    color: black;
+}

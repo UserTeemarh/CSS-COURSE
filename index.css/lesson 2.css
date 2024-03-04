@@ -1,0 +1,45 @@
+html {
+  font-size: 130%;
+}
+body {
+  background: #000;
+  color: white;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+table,
+thead,
+th,
+tbody,
+tr td {
+  border-collapse: collapse;
+}
+td {
+  padding: 10px 10px;
+  font-size: 0.98rem;
+}
+.bold {
+  font-weight: 800;
+  font-size: 1rem;
+}
+p {
+  font-size: 1.1rem;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+  td {
+    padding: 5px 5px;
+    font-size: 0.6rem;
+  }
+  .bold {
+    font-weight: 550;
+    font-size: 0.7rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}

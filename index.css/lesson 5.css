@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  text-transform: capitalize;
+}
+ul li {
+  margin-top: 10px;
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid gray;
+}
+small {
+  color: gray;
+}
+table,
+th,
+td {
+  padding: 10px 10px;
+  font-size: 21px;
+}
+.td {
+  font-weight: 900;
+  font-size: 23px;
+}

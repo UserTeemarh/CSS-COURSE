@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css/lesson 5.css" />
+    <title>COLOR PROPERTY</title>
+  </head>
+  <body>
+    <h1><center>COLOR PROPERTY</center></h1>
+    <p>
+      The <small>color</small> property is used to set the text color of an
+      element. It allows the customization of text color to achieve the decimal
+      visual appearance for the webpage.
+    </p>
+    <h2><u>Types of CSS Color Code</u></h2>
+    <table border="2">
+      <thead>
+        <th>Types of CSS Color Code</th>
+        <th>Description</th>
+        <th>Color Illustration</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td">Named Color</td>
+          <td>
+            Color names are value (name) that represent a color. There are
+            around 147 named colors recognized by browsers.
+          </td>
+          <td>
+            Brown <br />
+            red <br />
+            yellow etc.
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" class="td">HSL</td>
+          <td>
+            HSL stands for hue, saturation, and lightness. It is another way of
+            specifying color for text (and anything else that takes color) in
+            CSS.
+          </td>
+          <td>hsl(23, 50% 40%)</td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>
+                <b>Hue</b> represents the color wheel in 360°. So, 0° is red,
+                120° is green and 240° is blue.
+              </li>
+              <li>
+                <b>Saturation</b> is the amount of gray in the color, expressed
+                as a percentage. 0% is the shade of gray and 100% is the color
+                itself.
+              </li>
+              <li>
+                <b>Lightness</b> is the amount of darkness and lightness in the
+                color expressed as a percentage. 0% is black and 100% is white.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="td">HSLA</td>
+          <td>
+            HSLA color value is an extension of HSL color values with an alpha
+            channel - which specifies the opacity of an element. The extra ‘a’ stands for alpha,
+            which allows the specification of the color opacity. It takes a
+            value from 0.0 to 1.0
+          </td>
+          <td>hsla(23, 50%, 40%, 0.5)</td>
+        </tr>
+        <tr>
+          <td rowspan="2" class="td">HEX</td>
+          <td>
+            Hex values are used to represent colors with a total of 6
+            characters. It is denoted with (#) symbol, then any
+            number from 0 to 9, and  any letter from A to F.
+          </td>
+          <td rowspan="2">#f00ff</td>
+        </tr>
+        <tr>
+          <td>
+            The first 2 values stand for red, the next two stand for green, and
+            the last 2 represent blue. With hex values, there's no limitation to usage of 
+            the shades of colors.
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" class="td">RGB</td>
+          <td>
+            RGB stands for red, green, and blue. With RGB colosr, It can be
+            specified in terms of how much red, green, blue required. All three
+            are expressed with numbers between 0 and 255.
+          </td>
+          <td rowspan="2">
+            rgb(255, 255, 234) <br /><br />
+            rgba(255, 255, 234, 0.5)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            There is a type of RGB called rgba. The extra ‘a’ stands for alpha,
+            which allows the specification of the color opacity. It takes a
+            value from 0.0 to 1.0
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Which Color Code is the Best to use?</h3>
+    <ul>
+      <li>
+        When <b>named color</b> is used. The use of different shades of colors
+        is limited because the browser recognized only 147 predefined colors.
+      </li>
+      <li>
+        Hexadecimal colors are very dynamic because it doesn't have a
+        limitation. With <small>hex</small> colors, various shades of color can
+        be used.
+      </li>
+      <li>
+        RGB colors are as dynamic as hex colors. Apart from being able to
+        specify how much red, green, and blue to be used from 0 to 255, the
+        transparency of the color can be set with the extra alpha value.
+      </li>
+      <li>
+        HSL is the most dynamic of all. Colors can be specified in degrees from
+        0 to 360 within the color wheel, set how saturated and dark it should
+        look in percentages, and can also set an opacity from 0.0 to 1.0
+      </li>
+    </ul>
+    <!-- illustration to be demonstrated.. -->
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css/lesson 6.css" />
+    <link rel="stylesheet" href="/index.css/lesson 8.css" />
+    <title>CSS BOX MODEL</title>
+  </head>
+  <body>
+    <main>
+      <h1>CSS BOX MODEL</h1>
+      <p>
+        The <small>css box model</small> is a fundamental concept that defines
+        the layout and structure of elements on a webapage. It collectively determine the dimensions and spacing of an element. </p>
+      <h2><u>COMPONENTS OF CSS BOX MODEL</u></h2>
+      <section>
+        <h3>1. CONTENT</h3>
+        <p>
+          The <small>content</small> refers to the actual content of the HTML
+          element, such as text, images, or other media. It is the innermost
+          part of box model. The size of the content area can be specified using
+          CSS properties like width and height.
+        </p>
+      </section>
+      <section>
+        <h3>2. BORDER</h3>
+        <p>
+          The <small>border</small> refers to the area that surrounds the
+          content and padding of an element. It defines the visible boundary of
+          the element and seperates it from adjacent elements.
+        </p>
+        <table border="2">
+          <caption>
+            <marquee behavior="alternate" direction="left"
+              >BORDER PROPERTIES AN DESCRIPTION</marquee
+            >
+          </caption>
+          <thead>
+            <th>BORDER PROPERTY</th>
+            <th>DESCRIPTION</th>
+            <th>VALUE(s)</th>
+          </thead>
+          <tbody>
+            <th>border-width</th>
+            <td>
+              The <small>border-width</small> property is used to specify the
+              width of the border around an element. It can be set for
+              individual sides <i>(top, right, bottom,left).</i>
+            </td>
+            <td>
+              <ul>
+                <li>length values with units.</li>
+                <li>thin</li>
+                <li>medium</li>
+                <li>thick</li>
+              </ul>
+            </td>
+            <tr>
+              <th>border-style</th>
+              <td>
+                The <small>border-style</small> property defines the style of
+                the border around an element. It specifies how the border should
+                be displayed.
+              </td>
+              <td>
+                <ul>
+                  <li>none</li>
+                  <li>solid</li>
+                  <li>dashed</li>
+                  <li>dotted</li>
+                  <li>double</li>
+                  <li>groove</li>
+                  <li>ridge</li>
+                  <li>inset</li>
+                  <li>outset</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>border-color</th>
+              <td>
+                The <small>border-color</small> is used to specify the co+lor of
+                the border around an element. It accepts various color values.
+              </td>
+              <td>
+                <ul>
+                  <li>named colors</li>
+                  <li>hexadecimal</li>
+                  <li>RGB/RGBA</li>
+                  <li>HSL/HSLA</li>
+                  <li>transparent</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>border-radius</th>
+              <td>
+                The <small>border-radius</small> is used to to create rounded
+                corners for an element's border. It is used to control the
+                curvature of each corner individually or set the same radius for
+                all corners
+              </td>
+              <td>
+                <ul>
+                  <li>length values</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>border</th>
+              <td>
+                The <small>border</small> is a shorthand property that allows
+                the specification of all the individual border properties
+                <i>(border-width, border-style, and border-color)</i> in one
+                declaration.
+              </td>
+              <td>
+                <ul>
+                  <li>border-width, border-style, and border-color</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h3><u>3. MARGIN</u></h3>
+        <p>
+          The <small>margin</small> property is used to create space around an
+          element's border. It defines the space between the element's border
+          and adjacent element. Margins can be set for individual sides
+          <i>(top, right, bottom, left)</i> or for all sides at once using
+          shorthand notation.</p>
+      <article>  <table border="2">
+        <caption>
+          <marquee behavior="alternate" direction="right"
+            >INDIVIDUAL MARGIN PROPERTIES AND DESCRIPTION</marquee
+          >
+        </caption>
+        <thead>
+          <th>MARGIN PROPERTY</th>
+          <th>DESCRIPTION</th>
+        </thead>
+        <tbody>
+          <th>margin-top</th>
+          <td>Specifies the margin for the top side of the element</td>
+          <tr>
+            <th>margin-right</th>
+            <td>Specifies the margin for the right side of the element</td>
+          </tr>
+          <tr>
+            <th>margin-bottom</th>
+            <td>Specifies the margin for the bottom side of the element</td>
+          </tr>
+          <tr>
+            <th>margin-left</th>
+            <td>Specifies the margin for the bottom side of the element</td>
+          </tr>
+          <tr>
+            <th>margin</th>
+            <td>Sets themargin for all four sides of an element</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+</section>
+<section>
+    <h3><u>4. PADDING</u></h3>
+    <p>The <small>padding</small> property is used to create space around the content inside an element's border. It defines the distance between the element's content area and its border. Padding can be set for individual sides <i>(top, right, bottom, left)</i> or for all sides at once using shorthand notation.</p>
+    <article>  <table border="2">
+        <caption>
+          <marquee behavior="alternate" direction="right"
+            >INDIVIDUAL PADDING PROPERTIES AND DESCRIPTION</marquee
+          >
+        </caption>
+        <thead>
+          <th>padding PROPERTY</th>
+          <th>DESCRIPTION</th>
+        </thead>
+        <tbody>
+          <th>padding-top</th>
+          <td>Specifies the padding for the top side of the element</td>
+          <tr>
+            <th>padding-right</th>
+            <td>Specifies the padding for the right side of the element</td>
+          </tr>
+          <tr>
+            <th>padding-bottom</th>
+            <td>Specifies the padding for the bottom side of the element</td>
+          </tr>
+          <tr>
+            <th>margin-left</th>
+            <td>Specifies the margin for the bottom side of the element</td>
+          </tr>
+          <tr>
+            <th>padding</th>
+            <td>Sets the padding for all four sides of an element</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+</section>
+    </main>
+  </body>
+</html>
