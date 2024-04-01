@@ -108,28 +108,18 @@
         <tr>
           <td class="bold">Child Selector</td>
           <td>
-            The <i>child selector</i> denoted with (>) symbol is used to select
-            elements that are direct children of a specified parent element. It
-            only targets elements that are one level deep in the HTML hierachy.
+            The <i>child selector</i> is represented by the ">" symbol. It is used to select elements that are direct children of a specified parent element.
           </td>
         </tr>
         <tr>
           <td class="bold">Adjacent Sibling Selector</td>
           <td>
-            The <i>adjacent sibling selector</i> denoted with (+) is used to
-            select an element that is immediately preceded by a specified
-            element. It targets an element that shares the same parent and comes
-            directly after the specified element in the HTMl structure.
-          </td>
+            The <i>adjacent sibling selector</i> is represented by the "+" symbol,  is used to select an element that is immediately preceded by a certain element.</td>
         </tr>
         <tr>
           <td class="bold">General Sibling Selector</td>
           <td>
-            The <i>general sibling selector</i> denoted with a tilde (~) is used
-            to select element and share the same parent. It targets elements
-            that come after the specified element, not necessarily immediately
-            after.
-          </td>
+            The <i>general sibling selector</i> is represented by the "~" symbol, is used to selects all sibling elements that follow a certain element, regardless of whether they are immediately adjacent or not
         </tr>
       </tbody>
     </table>
@@ -150,52 +140,35 @@
       </thead>
       <tbody>
         <tr>
-          <td class="bold">[attr]</td>
-          <td>Represents elements with an attribute name of <i>attr</i>.</td>
+          <td class="bold">attribute existence  selector:</td>
+          <td>The <small>existence attribute selector</small> targets elements that have a specific attribute, regardless of its value. It's denoted by enclosing the attribute name in square brackets "[ ]"</td>
         </tr>
         <tr>
-          <td class="bold">[attr=value]</td>
+          <td class="bold">attribute exact value  selector</td>
+          <td>It is used to select elements with the exact value of the specified attribute. It is denoted by the attribute name followed by an equals sign and the attribute value inside square brackets "[ ]"</td>
+        </tr>
+        <tr>
+          <td class="bold">attribute contains selector</td>
           <td>
-            Represents elements with an attribute name of <i>attr</i> whose
-            value is exactly <i>value</i>.
+           It selects elements that have the specified attribute with a value exactly equal to a certain value. It is denoted by the attribute name followed by an equals sign and an asterik (*) symbol, and the attribute value inside square brackets "[ ]"
           </td>
         </tr>
         <tr>
-          <td class="bold">[attr~=value]</td>
+          <td class="bold">attribute begins with selector</td>
           <td>
-            Represents elements with an attribute name of <i>attr</i> whose
-            <i>value</i> is a whitespace-separated list of words, one of which
-            is exactly <i>value</i>.
+            It is used to select elements with an attribute that begins exactly with a specified value. It is denoted by [attribute^=value].
           </td>
         </tr>
         <tr>
-          <td class="bold">[attr|=value]</td>
+          <td class="bold">attribute ends with selector</td>
           <td>
-            Represents elements with an attribute name of <i>attr</i> whose
-            value can be exactly value or can begin with value immediately
-            followed by a hyphen, <small>-</small>.
+            It is used to select elements with an attribute that ends exactly with a specified value. It is denoted by [attribute$=value].
           </td>
         </tr>
         <tr>
-          <td class="bold">[attr^=value]</td>
+          <td class="bold">attribute spaced selector</td>
           <td>
-            Represents elements with an attribute name of <i>attr</i> whose
-            value is prefixed (preceded) by <i>value</i>.
-          </td>
-        </tr>
-        <tr>
-          <td class="bold">[attr$=value]</td>
-          <td>
-            Represents elements with an attribute name of <i>attr</i> whose
-            value is suffixed (followed) by <i>value.</i>
-          </td>
-        </tr>
-        <tr>
-          <td class="bold">[attr*=value]</td>
-          <td>
-            Represents elements with an attribute name of <i>attr</i> whose
-            value contains at least one occurrence of <i>value</i> within the
-            string.
+            It is used to select elements with a specified attribute whose value is a whitespace-seperated list of words, one of which is exactly the specified value. It is denoted by [attribute~=value].
           </td>
         </tr>
       </tbody>

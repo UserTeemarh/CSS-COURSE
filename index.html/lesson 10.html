@@ -10,14 +10,14 @@
 <body>
   <h1>THE GRID</h1>
   <p>A <small>grid</small> is a two-dimensional layout system that is used to create complex web page layouts with rows and columns. It's defined by a set of rows and columns, where content can be placed within individual cells or across multiple cells. </p>
-  <p>The grid layout module provides a powerful way to arrache elements on a web page, offering more flexibility and control compared  to traditional layouts methods like <i>floats</i> and <i>positioning</i>.</p>
+  <p>The grid layout module provides a powerful way to arrange elements on a web page, offering more flexibility and control compared  to traditional layouts methods like <i>floats</i> and <i>positioning</i>.</p>
   <h2>TYPES OF GRID PROPERTIES</h2>
   <table border="2">
     <caption><marquee behavior="alternate" direction="left">GRID PROPERTIES AND DESCRIPTION</marquee></caption>
     <thead>
       <th>GRID PROPERTY</th>
       <th>DESCRIPTION</th>
-      <th>VALUE(s)</th>
+      <th>GRID VALUE(s)</th>
     </thead>
     <tbody>
       <th>display</th>
@@ -28,8 +28,169 @@
         </ul>
       </td>
       <tr>
-        <th></th>
+        <th>grid-template-columns</th>
+        <td>The <small>grid-template-columns</small> property is used to define the number and size of columns in a grid container. It allows the specificity of the width of each column individually or using various units.</td>
+        <td>
+          <ul>
+            <li>fixed values (px, pt, in) </li>
+            <li>percentages value (%)</li>
+            <li>Fractional units (fr)</li>
+            <li>Auto</li>
+            <li>fit-content</li>
+          </ul>
+        </td>
       </tr>
+      <tr>
+        <th>grid-template-rows</th>
+        <td>The <small>grid-template-rows</small> property is used to define the size of each row in the grid. It allows the specificity of the height of each row individually or collectively using a combination of length values</td>
+        <td>
+          <ul>
+            <li>fixed values (px, pt, in) </li>
+            <li>percentages value (%)</li>
+            <li>Fractional units (fr)</li>
+            <li>Auto</li>
+            <li>fit-content</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>grid-gap or gap</th>
+        <td>The <small>grid-gap or gap</small> is used to specify the size of the gap between grid items in a grid container. It sets the gap both horizontally or vertically.</td>
+        <td>
+          <ul>
+            <li>Single value with unit (px/pt/in)</li>
+            <li>Two values with units (px/pt/in)</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>grid-row-start</th>
+        <td>The <small>grid-row-start</small> property specifies the line on which the grid item's row starts. It determines the starting position of the grid item along the grid's rows.</td>
+        <td>
+          <ul>
+            <li>Numerical values with no unit</li>
+            <li>Named Lines: Uses custom names for the grid lines, if defined.</li>
+            <li>Span: Specifies how many grid tracks the item should span. </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>grid-column-start</th>
+        <td>The <small>grid-column-start</small> property specifies the line on which the grid item's column starts. It determines the starting position of the grid item along the grid's columns. </td>
+        <td>
+          <ul>
+            <li>Numerical values with no unit</li>
+            <li>Named Lines: Uses custom names for the grid lines, if defined.</li>
+            <li>Span: Specifies how many grid tracks the item should span. </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>grid-row-end</th>
+        <td>The <small>grid-row-end</small> property specifies the line on which the grid item's column ends. It determines the ending position of the grid item along the grid's columns.</td>
+        <td>
+          <ul>
+            <li>Numerical values with no unit</li>
+            <li>Named Lines: Uses custom names for the grid lines, if defined.</li>
+            <li>Span: Specifies how many grid tracks the item should span. </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>grid-column-end</th>
+        <td>The <small>grid-column-end</small> property specifies the line on which the grid item's column ends. It determines the ending position of the grid item along the grid's columns.</td>
+        <td>
+          <ul>
+            <li>Numerical values with no unit</li>
+            <li>Named Lines: Uses custom names for the grid lines, if defined.</li>
+            <li>Span: Specifies how many grid tracks the item should span. </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>grid-column</th>
+        <td>The <small>grid-column</small> property is used to specify the grid lines on which a grid item will be placed, both its starting and ending postions along the grid's columns.</td>
+        <td>
+          <ul>
+            <li>Line numbers. e.g (1/3)</li>
+            <li>Span(It specifies how many grid tracks the item should span). </li>
+            <li>Auto: It is used to let the grid layout algorithm determine the placement.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>grid-row</th>
+        <td>The <small>grid-row</small> property is used to specify the grid lines on which a grid item will be placed, both its starting and ending positions along the grid's rows.</td>
+        <td>
+          <ul>
+            <li>Line numbers. e.g (1/3)</li>
+            <li>Span(It specifies how many grid tracks the item should span). </li>
+            <li>Auto: It is used to let the grid layout algorithm determine the placement.</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>grid-area</th>
+        <td>The <small>grid-area</small> property is a shorthand property that allows the use of (grid-row-start, grid-column-start, grid-row-end, grid-column-end) in a single declaration. It assigns a grid item to a named grid area.</td>
+        <td>
+          <ul>
+            <li>grid-row-start / grid-column-start / grid-row-end / grid-column-end</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>justify-content</th>
+        <td>The <small>justify-content</small> property is used to align the grid along the inline (row) axis within the grid container. It determines how grid items are distributed horizontally where there is extra space in the grid container.</td>
+        <td>
+          <ul>
+            <li>start</li>
+            <li>end</li>
+            <li>center</li>
+            <li>stretch</li>
+            <li>space-between</li>
+            <li>space-around</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <th>align-content</th>
+        <td>The <small>align-content</small> property is used to align the grid along the block (column) axis within the grid container when there's extra space available. It doesn't have any effect if there's only one row of grid items.</td>
+        <td>
+          <ul>
+            <li>start</li>
+            <li>end</li>
+            <li>center</li>
+            <li>stretch</li>
+            <li>space-between</li>
+            <li>space-around</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>justify-items</th>
+        <td>The <small>justify-items</small> property is used to align grid items along the inline (row) axis within their grid cell. It affects how grid items are positioned inside their respective grid areas vertically.</td>
+        <td>
+          <ul>
+            <li>start</li>
+            <li>end</li>
+            <li>center</li>
+            <li>stretch</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th>align-items</th>
+        <td>The <small>align-items</small> property is used to align items along the block (column) axis within their grid cells. It affects how grid items are positioned inside their respective grid areas horizontally.</td>
+        <td>
+          <ul>
+            <li>start</li>
+            <li>end</li>
+            <li>center</li>
+            <li>stretch</li>
+          </ul>
+        </td>
+      </tr> 
     </tbody>
 
   </table>

@@ -1,86 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css full course/index.css/lesson 14.css">
-    <title>Animation properties</title>
-</head>
-<body>
-    <h1><center>THE ANIMATION PROPERTY</center></h1>
-    <p>The Animation property is used to apply animations to elements. It combines various animation-related properties into a shorthand.</p>
-    <p>Animation involve the use of the <small>@keyframes</small> to define the sequence of style for an element at different points in time.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css/lesson 6.css" />
+    <link rel="stylesheet" href="/index.css/lesson 8.css" />
+    <title>THE ANIMATION IN CSS</title>
+  </head>
+  <body>
+    <h1>THE ANIMATION IN CSS</h1>
+    <p>
+      <small>Animation</small> refers to the process of gradually changing an
+      element's style over a specified duration, creating visual effects such as
+      movement, fading, or transitioning between different states.
+    </p>
+    <p>
+      CSS <small>animations</small> is used to enhance user interfaces without
+      relying on Javascript, by simply using stylesheets to define keyframes and
+      animation properties.
+    </p>
 
-    <h3><u>How to make an animation</u></h3>
+    <h2><u>COMPONENTS OF ANIMATION IN CSS</u></h2>
+    <p>
+      Animations consist of several key components that work together to define
+      and control the behaviour of animated element.
+    </p>
+    <h2>1. <u>ANIMATION PROPERTIES</u></h2>
+    <p>
+      Animation properties are used to control the behaviour and apperance of
+      animations applied to elements. These properties define aspects of the
+      animation.
+    </p>
+    <table border="2">
+      <caption>
+        <marquee behavior="alternate" direction="right"
+          >ANIMATION PROPERTIES AND DESCRIPTION.</marquee
+        >
+      </caption>
+      <thead>
+        <th>ANIMATION PROPERTY IN CSS</th>
+        <th>DESCRIPTION</th>
+        <th>VALUE(s)</th>
+      </thead>
+      <tbody>
+        <th>animation-name</th>
+        <td>
+          The <small>animation-name</small> property is used to specify the name
+          of the <small>@keyframes</small> rule that defines the keyframes
+          sequence for an animation. This property is essential for associating
+          an element with a specification animation sequence defined elsewhere
+          in the stylesheet.
+        </td>
+        <td>
+            <ul>
+                <li>preffered keyframeName</li>
+            </ul>
+        </td>
+        <tr>
+            <th>animation-duration</th>
+            <td>The <small>animation-duration</small> property is used to specify the duration of an animation. It determines how long an animation cycle should take to  complete one full iteration. It is essential for controlling the speed at which the animation occurs.</td>
+            <td>
+                <ul>
+                    <li>preffered time with unit (s or ms)</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>animation-timing-function</th>
+            <td>The <small>animation-timing-function</small> property is used to specify the pacing of an animation. It determines how intermediate values between keyframes are calculated over the duration of the animation. It is used to control the speed curve of an animation, influencing the rate of change of animated properties</td>
+            <td>
+                <ul>
+                    <li>ease</li>
+                    <li>ease-in</li>
+                    <li>ease-out</li>
+                    <li>ease-in-out</li>
+                    <li>linear</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>animation-iteration-count</th>
+            <td>The <small>animation-iteration-count</small> property is used to specify the number of times an animation cycle should be played before stopping. It determines how many times the animation should repeat.</td>
+            <td>
+                <ul>
+                    <li>An integer value</li>
+                    <li>infinite</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>animation-delay</th>
+            <td>The <small>animation-delay</small> property is used to specify a delay before an animation starts. It is used to control when an animation begins after it's triggered or applied to an element.</td>
+            <td>
+                <ul>
+                    <li>preffered time with unit (s or ms)</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>animation-direction</th>
+            <td>The <small>animation-direction</small> property is used to specify the direction of an animation cycle. </td>
+            <td>
+                <ul>
+                    <li>normal</li>
+                    <li>reverse</li>
+                    <li>alternate</li>
+                    <li>alternate-reverse</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>animation-fill-mode</th>
+            <td>The <small>animation-fill-mode</small> property is used to control the styles applied to an element before and after the execution of an animation. It determines whether and how the styles defined in the keyframes (start or end) should be applied to the element</td>
+            <td>
+                <ul>
+                    <li>none</li>
+                    <li>forwards</li>
+                    <li>backwards</li>
+                    <li>both</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>animation-play-state</th>
+            <td>The <small>animation-play-state</small> is used to control whether an animation is running or paused. It is used to dynamically control the playback state of an  animation.</td>
+            <td>
+                <ul>
+                    <li>running</li>
+                    <li>paused</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>animation</th>
+            <td>The <small>animation</small> property is a shorthand property that combines multiple animation-related properties into a single declaration.</td>
+            <td>
+                <ul>
+                    <li>All animation properties</li>
+                </ul>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>2. <u>KEYFRAMES (@keyframes)</u></h2>
+    <p>A <small>keyframe</small> is a crucial consept that defines specific stages (or key points) of an animation sequence. keyframes specify the styles that an element should have at certain points during the animation's duration.</p>
+    <h3><u>Syntax and Usage:</u></h3>
+    <p>Keyframes are defined using the <small>@keyframes</small>, followed by a name that identifies the animation sequence. Inside the <small>@keyframes</small> rule, various keyframe selectors and the corresponding CSS styles.</p>
+    <h3><u>Keyframe Selectors:</u></h3>
+    <ol>
+        <li>From (equivalent to 0%)
+            <ul>
+                <li>Represents the starting point of the animation.</li>
+                <li>Defines the styles that should be applied to the element at the beginning of the animation</li>
+            </ul>
+        </li>
+        <li> To (equivalent to 100%)
+            <ul>
+                <li>Represents the ending point of the animation</li>
+                <li>Defines the styles that should be applied to the element at the end of the animation.</li>
+            </ul>
+        </li>
+        <li>Percentage Values (0%, 50%, 100%,, etc)
+            <ul>
+                <li>Represents specific points in time during the animation's duration.</li>
+                <li>Allows for more precise control over intermediate states and transitions within the animation.</li>
+            </ul>
+        </li>
+    </ol>
+    <h3><u>Key Points on Keyframes</u></h3>
     <ul>
-      <li>select an HTML element to animate</li>
-      <li>a CSS rule which binds the animation to the element</li>
-      <li>a group of <i>@keyframes</i> that defines the styles at the start and the end of the animation. </li>
+        <li>Keyframes define the key stages or points of an animation, It specifies how an element should appear and behave at different times during the animation's timeline.</li>
+        <li>By Utilizing keyframes and interpolation between them. It creates fluid and dynamic animations that smoothly transition between different states and properties of element.</li>
+        <li>Keyframe animation provide powerful capabilities for web developers to enhance user interfaces with engaging and interactive visual effects.</li>
     </ul>
-
-    <h3>Types of Animation Properties</h3>
-    <p>The <small>animation</small> property is a shorthand property that combines several individual  animation-related properties. The components of the <small>animation</small> property are as follow:</p>
-    <ul>
-        <li>Animation-name</li>
-        <li>Animation-duration</li>
-        <li>Animation-timing-functions</li>
-        <li>Animation-iteration-count</li>
-        <li>Animation-delay</li>
-        <li>Animation-fill-mode</li>
-        <li>Animation-play-state</li>
-    </ul>
-
-    <dt>
-        <dl><b>Animation-name</b></dl>
-        <dd>The <small>Animation-name</small> property is used to specify the name of the <small>@keyframes</small> rule that defines the animation behavior.</dd>
-    </dt>
-    <dt>
-        <dl><b>Animation-duration</b></dl>
-        <dd>The <small>Animation-duration</small> property is used to specify how long the animation cycle should take. The time is specified in seconds or milliseconds, which means that the animation occurs instantenously.</dd>
-    </dt>
-    <dt>
-        <dl><b>Animation-timing-function</b></dl>
-        <dd>The <small>Animation-timing-function</small> property is used to define the pace of an animation. It specifies how the intermediate values of the CSS properties being animated are calculated over the duration of the animation.</dd>
-        <p style="font-size: 20px; text-decoration: underline;">Animation-timing function values are as follow:</p>
-        <ul style="font-size: 18px;">
-            <li><b>ease:(<small>default</small>)</b> &NonBreakingSpace;slow at the beginning, fast in the middle, slow at the end</li>
-            <li><b>linear:</b> &NonBreakingSpace;&NonBreakingSpace;constant speed throughout the animation</li>
-            <li><b>ease-in:</b> &NonBreakingSpace;&NonBreakingSpace;starts slowly and accelerate</li>
-            <li><b>ease-out:</b>&NonBreakingSpace;&NonBreakingSpace; starts quickly and decelerates</li>
-            <li><b>ease-in-out:</b> &NonBreakingSpace;&NonBreakingSpace;starts slowly, accelerates in the middle, and decelerates at the end.</li>
-            <!-- <li><b>cubic-bezier(n,n,n):</b> Defines a custom cubic bezier curve for the timing function.</li> -->
-        </ul>
-    </dt>
-    <dt>
-        <dl><b>Animation-iteration-count</b></dl>
-        <dd>The <small>Animation-iteration-count</small> property in specifies the number of times an animation cycle should be played. It takes a numberic value or the keyword <small>infinte</small> for endless repetition</dd>
-    </dt>
-    <dt>
-        <dl><b>Animation-delay</b></dl>
-        <dd>The <small>Animation-delay</small> property specifies the amount of time to walt from applying the animation to an element before beginning to perform the animation. </dd>
-    </dt>
-    <dt>
-        <dl><b>Animation-fill-mode</b></dl>
-        <dd>The <small>Animation-fill-mode</small> property controls the style of an animated element outside of its execution</dd>
-        <p style="font-size: 20px; text-decoration: underline;">Animation-fill-mode  values are as follow:</p>
-        <ul style="font-size: 18px;">
-            <li><b>none:(<small>default</small>)</b>&NonBreakingSpace;&NonBreakingSpace; The animations styles are not changed before or after the animation.</li>
-            <li><b>forwards:</b> &NonBreakingSpace;&NonBreakingSpace;The element retains the styles of the last keyframes after the animation finishe</li>
-            <li><b>backwards:</b> &NonBreakingSpace; &NonBreakingSpace;The element is styled with the values of the first keyframe before the animation starts</li>
-            <li><b>both:</b>&NonBreakingSpace; &NonBreakingSpace; combines the effect of <small>forwards</small> and <small>backwards</small>, meaning the element is styled with the values of the first keyframe before the animation starts and retains the styles of the last keyframe after the animation finishes</li>
-          
-        </ul>
-    </dt>
-    <dt>
-        <dl><b>Animation-play-state</b></dl>
-        <dd>The <small>Animation-play-state</small> property is used to pause or play an animation</dd>
-        <p style="font-size: 20px; text-decoration: underline;">It take two values</p>
-        <ul style="font-size: 18px;">
-            <li>running</li>
-            <li>pause</li>
-        </ul>
-    </dt>
-    <div class="sun"></div>
-</body>
+  </body>
 </html>

@@ -1,46 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css full course/index.css/lesson 12.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css/lesson 6.css" />
+    <link rel="stylesheet" href="/index.css/lesson 8.css" />
     <title>transform properties</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>TRANSFORM PROPERTY</h1>
-    <p>The <small>transform</small> property is used to apply transformations to elements. The <small>transform</small> property allows you to modify the apperance and position of an element without affecting the layout of the document
+    <p>
+      The <small>transform</small> property is used to apply transformations to
+      elements. The <small>transform</small> property is used to modify the
+      apperance and position of an element without affecting the layout of the
+      document.
     </p>
-    <h3>Types of Transform Property</h3>
-    <ul>
-        <li>translate </li>
-        <li>rotate </li>
-        <li>scale </li>
-        <li>skew </li>
-        <!-- <li>matrix </li> -->
-    </ul>
-    <dt>
-        <dl>translate property</dl>
-        <dd>the translate property allows you to transfer an element from one place to another along the x (horizontal) axis, the Y (vertical) axis, and the Z (depth) axis similar to how your might think of moving an element using offset, like top, bottom, right, and left</dd>
-    </dt>
-    <dt>
-        <dl>rotate property</dl>
-        <dd>the rotate property allows you to rotate element. the rotate property  defines a value for how much an elements is rotated clockwise around z-axis</dd>
-    </dt>
-    <dt>
-        <dl>the scale property</dl>
-        <dd>the scale property defines values for how much an element is scaled in x-axis and y-directions. you can also define how much an element is scaled in z-direction.</dd>
-    </dt>
-    <dt>
-    <dl>the skew</dl>
-    <dd>this transformation is a shear mapping (transvection) that distorts each point within an element by a certain angle in the horizontal and vertical directions. the effect is as if you grabbed each corner of the element and pulled them along a certain angle.</dd>
-</dt>
-    <!-- <dt> 
-        <dl>The Matrix</dl>
-        <dd>The <small>matrix</small>  in the <small>transform</small> property  allows you to apply 2D transformation using a 6-value matrix. The matrix represents a mathematical transformation matrix that can combine various transformation into one</dd>
-    </dt> -->
-  
-
-  
-</body>
+    <p><i>All transform values are to be specified in number.</i></p>
+    <h2><u>TYPES OF TRANSFORM PROPERTY'S VALUES</u></h2>
+    <table border="2">
+      <caption>
+        <marquee behavior="alternate" direction="right"
+          >TRANSFORM PROPERTY'S VALUES AND DESCRIPTION</marquee
+        >
+      </caption>
+      <thead>
+        <th>TRANSFORM PROPERTY'S VALUES</th>
+        <th>DESCRIPTION</th>
+        <th>UNIT</th>
+      </thead>
+      <tr>
+        <th>translateX( )</th>
+        <td>
+          The <small>translateX( )</small> value is used to move an element
+          along the horizontal (X) axis. It shifts the element horizontally by
+          specified distance
+        </td>
+        <td>px</td>
+      </tr>
+      <tr>
+        <th>translateY( )</th>
+        <td>
+          The <small>translateY( )</small> value is used to move an element
+          along the vertical (Y) axis. It shifts the element vertically by
+          specified distance
+        </td>
+        <td>px</td>
+      </tr>
+      <tr>
+        <th>translate( )</th>
+        <td>
+          The <small>translate( )</small> value is used to within the transform
+          property to move an element along with the horizontal (X) and vertical
+          (Y) axes simultaneously. It specifies the amount by which the element
+          should be translated in the X and Y directions
+        </td>
+        <td>px</td>
+      </tr>
+      <tr>
+        <th>translateZ( )</th>
+        <td>
+          The <small>translateZ( )</small> is used move an element along the
+          z-axis in 3D space. It specifies an element to be translated closer or
+          or farther away from the viewer, creating a sense of depth or
+          persceptive.
+        </td>
+        <td>px</td>
+      </tr>
+      <tr>
+        <th>rotateX( )</th>
+        <td>
+          The <small>rotateX( )</small> value is used to rotate an element
+          around the horizontal (X) axis in a 3D space. It specifies the angle
+          by which the element should be rotated along the X axis.
+        </td>
+        <td>deg</td>
+      </tr>
+      <tr>
+        <th>rotateY( )</th>
+        <td>
+          The <small>rotateY( )</small> value is used to rotate an element
+          around the vertical (Y) axis in a 3D space. It specifies the angle by
+          which the element should be rotated along the Y axis.
+        </td>
+        <td>deg</td>
+      </tr>
+      <tr>
+        <th>rotate( )</th>
+        <td>
+          The <small>rotate( )</small> value is used to rotate an element by a
+          specified angle around its center point.
+        </td>
+        <td>deg</td>
+      </tr>
+      <tr>
+        <th>rotateZ( )</th>
+        <td>
+          The <small>rotateZ</small> value is used to rotate an element around
+          the z-axis in a 2D or 3D. It specifies the angle by which the element
+          should be rotated along the z-axis.
+        </td>
+        <td>deg</td>
+      </tr>
+      <tr>
+        <th>scaleX( )</th>
+        <td>
+          The <small>scaleX( )</small> is used to scale an element along the
+          horizontal (X) axis. It specifies the scaling factor by which the
+          element should be resized along the x-axis.
+        </td>
+        <td>%</td>
+      </tr>
+      <tr>
+        <th>scaleY( )</th>
+        <td>
+          The <small>scaleY( )</small> is used to scale an element along the
+          horizontal (Y) axis. It specifies the scaling factor by which the
+          element should be resized along the Y-axis.
+        </td>
+        <td>%</td>
+      </tr>
+      <tr>
+        <th>scale( )</th>
+        <td>
+          The <small>scale( )</small> value is used to scale an element both
+          horizontally and vertically. It specifies the scaling factors along
+          both axes.
+        </td>
+        <td>%</td>
+      </tr>
+      <tr>
+        <th>scaleZ( )</th>
+        <td>
+          The <small>scaleZ( )</small> value is used to to scale an element
+          along the z-axis in 3D space. It specifies the scaling factor by which
+          the element should be resized along the z-axis
+        </td>
+        <td>%</td>
+      </tr>
+      <tr>
+        <th>skewX( )</th>
+        <td>
+          The <small>skewX( )</small> value is used to tilt or skew an element
+          along the horizontal (X) axis. It specifies the angle by which the
+          element should be skewed along the x-axis
+        </td>
+        <td>deg</td>
+      </tr>
+      <tr>
+        <th>skewY( )</th>
+        <td>
+          The <small>skewY( )</small> value is used to tilt or skew an element
+          along the vertical (Y) axis. It specifies the angle by which the
+          element should be skewed along the Y-axis
+        </td>
+        <td>deg</td>
+      </tr>
+      <tr>
+        <th>skew( )</th>
+        <td>
+          The <small>skew( )</small> value is used to tilt an element along both
+          the horizontal (X) and vertical (Y) axes simultaneously. It specifies
+          the angles by which the element should be skewed along both axes
+        </td>
+        <td>deg</td>
+      </tr>
+      <tr>
+        <th rowspan="2">matrix( )</th>
+        <td>
+          The <small>matrix( ) </small> value is a powerful tool that specifies
+          a 2D transformation using 3x3 matrix. It provides more control over
+          transformations compared to individual transformation values.
+        </td>
+        <td>no unit</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          It is used to combine all transforms into one and perform complex
+          transformation by specifying the values of transformation matrix.
+          <i>The <small>matrix()</small> takes six parameters.</i>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="3">matrix( ) PARAMETERS</th>
+      </tr>
+      <tr>
+        <th>scaleX()</th>
+        <td>
+          Horizontal scaling: It's the value by which the width of the element
+          is scaled. A value of 1 means the width is unchanged.
+        </td>
+      </tr>
+      <tr>
+        <th>skewY( )</th>
+        <td>
+          Skew transformation along the X-axis. It's the angle (in degrees) by
+          which the element is skewed along the Y-axis
+        </td>
+      </tr>
+      <tr>
+        <th>skewX( )</th>
+        <td>
+          Skew transformation along the X-axis. It's the angle (in degrees) by
+          which the element is skewed along the x-axis.
+        </td>
+      </tr>
+      <tr>
+        <th>scaleY( )</th>
+        <td>
+          Vertical scaling: It's the value by which the height of the element is
+          scaled. A value of 1 means the height is unchanged.
+        </td>
+      </tr>
+      <tr>
+        <th>translateX( )</th>
+        <td>
+          Horizontal translation. It's the distance by which the element is
+          moved along the X-axis. Positive values will move the element to the
+          right, while negative values will move it to the left.
+        </td>
+      </tr>
+      <tr>
+        <th>translateY( )</th>
+        <td>
+          Vertical translation: It's the distance by which the element is moved
+          along the Y-axis. Positive values will move the element down, while
+          negative values will move it up.
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>

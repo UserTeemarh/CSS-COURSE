@@ -1,47 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css full course/index.css/lesson 11.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css/lesson 6.css" />
+    <link rel="stylesheet" href="/index.css/lesson 8.css" />
+    <link rel="stylesheet" href="/index.css/lesson 11.css" />
     <title>THE POSITION PROPERTY</title>
-</head>
-<body>
-    <h1><center><u>THE POSITION PROPERTY</u></center></h1>
-<p>The Position Property is used to specify the positioning method of an element. The <small>top</small>, <small>left</small>, <small>bottom</small>, and <small>right</small> properties determines the final location of positioned element.</p>
-<h3>Position Property's value(s).</h3>
-<ol>
-    <li>relative</li>
-    <li>absolute</li>
-    <li>fixed</li>
-    <li>static</li>
-</ol>
-<dt>
-    <dl><b>position relative</b></dl>
-    <dd>Position relative property is used to position an element according to the normal flow of the document, and then offset relative to itself based on the values of <small>top</small>, <small>left</small>, <small>bottom</small>, and <small>right</small>. The offset does not affect the position of any other elements.</dd>
-</dt>
-<dt>
-    <dl><b>position absolute</b></dl>
-    <dd>Position absolute is used to remove an element from the normal document flow, and no space is created for the element in the page layout. The element will be positioned relatve to its closest ancestor or to the inital containing block.</dd>
-    <ul>
-        <li style="font-size: 18px;">Its final position is determined by the values of <small>top</small>, <small>left</small>, <small>bottom</small>, and <small>right</small></li>
-    </ul>
-</dt>
-<dt>
-    <dl><b>position fixed</b></dl>
-    <dd>an element with positioned: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. A fixed element does not leave a gap in the edge where it would normally have been located.</dd>
-    <ul>
-        <li style="font-size: 18px;">Its final position is determined by the values of <small>top</small>, <small>left</small>, <small>bottom</small>, and <small>right</small></li>
-    </ul>
-</dt>
-<dt>
-    <dl><b>position static</b></dl>
-    <dd>static is the default position for HTML elements. elements with position: static; are positioned based on the normal flow of the page. they are not affected by the top, right, left, bottom properties</dd>
-    <ul>
-        <li style="font-size: 18px;">Its final position is determined by the values of <small>top</small>, <small>left</small>, <small>bottom</small>, and <small>right</small></li>
-    </ul>
-</dt>
+  </head>
+  <body>
+    <h1>
+      <center><u>THE POSITION PROPERTY</u></center>
+    </h1>
+    <p>
+      The <small>position</small> property is used to specify how an element is
+      positioned within its parent element or the viewport. It is used to
+      determine where an element is displayed on the page.
+    </p>
 
-</body>
+    <h2><u>TYPES OF POSITION PROPERTY'S VALUES</u></h2>
+    <table border="2">
+      <caption>
+        <marquee behavior="alternate" direction="left"
+          >POSITION PROPERTY'S VALUES AND DESCRIPTION</marquee
+        >
+      </caption>
+      <thead>
+        <th>POSITION PROPERTY'S VALUES</th>
+        <th>DESCRIPTION</th>
+      </thead>
+      <tbody>
+        <th>static</th>
+        <td>
+          The <small>static</small> value is the default positioning method for
+          elements. It makes an element follow the normal flow of the document
+          and it appears in the order it's written in the HTML and doesn't
+          undergo any special positioning behavior.
+        </td>
+        <tr>
+          <th>relative</th>
+          <td>
+            The <small>relative</small> value makes the element positioned to
+            its normal position in the document flow, but the element can be
+            adjusted by using relative properties
+          </td>
+        </tr>
+        <tr>
+          <th colspan="5">RELATIVE VALUE'S PROPERTY</th>
+        </tr>
+        <th rowspan="2">top</th>
+        <td>
+          The <small>top</small> property specifies the distance the element is
+          moved down from its normal position in the document flow. It makes the
+          element remains in the document flow, and its position is adjusted
+          relative to where it would be normally be placed.
+        </td>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th rowspan="2">left</th>
+          <td>
+            The <small>left</small> property specifies the distance the element
+            is moved horizontally from its normal position in the document. This
+            allows the element to be adjusted horizontally to where it would be
+            normally be placed
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th rowspan="2">bottom</th>
+          <td>
+            The <small>bottom</small> property specifies the distance the
+            elemetn is moved up from its normal position in the document flow.
+            This allows the element's vertical position to be adjusted relative
+            to where it would normally be placed.
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th rowspan="2">right</th>
+          <td>
+            The <small>right</small> property specifies the distance the element
+            is moved horizontally from its normal postions in the document flow.
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th>Absolute:</th>
+          <td>
+            The <small>absolute</small> value is used to remove element from the
+            normal document flow and position it relative to its nearest
+            positioned ancestor (or the initial containing block if no
+            positioned ancestor is found). This implies that the element is
+            taken out of the flow of the document, and its position is
+            calculated based on its closest ancestor with position value
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">ABSOLUTE PROPERTY'S VALUE</th>
+        </tr>
+        <tr>
+          <th rowspan="2">top</th>
+          <td>
+            The <small>top</small> property is used to specify the distance
+            element is positioned from the top edge of its containing block
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th rowspan="2">left</th>
+          <td>
+            The <small>left</small> property is used to specify the distance the
+            element is positined from the left edge of its containing block.
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th rowspan="2">bottom</th>
+          <td>
+            The <small>bottom</small> property is used to move the element up
+            from the bottom edge of its containing block by the specified
+            distance.
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th rowspan="2">right</th>
+          <td>
+            The <small>right</small> property is used to specify the distance
+            the element is positined from the right edge of its containing
+            block.
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th>fixed</th>
+          <td>
+            The <small>fixed</small> value is used to positioned element to be
+            relative to the viewport (the browser window), and makes it remain
+            fixed in its position even when the page is scrolled.
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">FIXED VALUE'S PROPERTY</th>
+        </tr>
+        <tr>
+          <th rowspan="2">top</th>
+          <td>
+            The <small>top</small> property specifies the distance the element
+            is positioned from the top edge of the viewport.
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th rowspan="2">left</th>
+          <td>
+            The <small>left</small> property is used to specify the distance the
+            element is positined from the left edge of its containing block.
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th rowspan="2">bottom</th>
+          <td>
+            The <small>bottom</small> property is used to move the element up
+            from the bottom edge of its containing block by the specified
+            distance.
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th rowspan="2">right</th>
+          <td>
+            The <small>right</small> property is used to specify the distance
+            the element is positined from the right edge of its containing
+            block.
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th>sticky</th>
+          <td>
+            The <small>sticky</small> value positions based on the user's scroll
+            position. It behaves like relative positioning until the element
+            reaches a specified scroll position, then it "sticks" in place like
+            <small>fixed</small> positioning.
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">STICKY VALUE'S PROPERTY</th>
+        </tr>
+        <tr>
+          <th rowspan="2">top</th>
+          <td>
+            The <small>top</small> property determines the offset from the top
+            edge of the containing block at which the element becomes sticky.
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th rowspan="2">left</th>
+          <td>
+            The <small>left</small> property determines the offset from the left
+            edge of the containing block at which the element becomes sticky
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th rowspan="2">bottom</th>
+          <td>
+            The <small>bottom</small> property determines the offset from the bottom
+            edge of the containing block at which the element becomes sticky
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+        <tr>
+          <th rowspan="2">right</th>
+          <td>
+            The <small>right</small> property determines the offset from the right
+            edge of the containing block at which the element becomes sticky
+          </td>
+        </tr>
+        <tr>
+          <td>The value can specified in numerical values with units</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><small>z-index</small> property is crucial to positioning property because its the type of property that controls the order of positioned elements that overlap within the same stacking context.</p>
+    <h3><u>How It Works:</u></h3>
+    <ul>
+      <li>Elements with higher <small>z-index</small> value are stacked in front of elements with lower <small>z-index</small> values within the stacking context.</li>
+      <li>If two elements have the <small>z-index</small>, the one that comes later in the HTML document order will appear on top.</li>
+      <li>The <small>z-index</small> property only works on elements with a position value of <small>absolute, relative, fixed, or sticky</small>, It has no effect on elements with <small>static</small> value (the default value). </li>
+    </ul>
+  </body>
 </html>

@@ -1,37 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css full course/index.css/lesson 13.css">
-    <title>THE TRANSITION PROPERTIES</title>
-</head>
-<body>
-    <h1>THE TRANSITION PROPERTIES</h1>
-    <p>Transition property allows you to change property values smoothly over a given duration.</p>
-    <dt>
-        <dl>Transition-property</dl>
-        <dd>The transition property specifies the name of the CSS property the transition effect is for. (The transition effect will start when the specified CSS property changes).</dd>
-    </dt>
-    <dt>
-        <dl>Transition-duration</dl>
-        <dd>This property specifies the amount of time a transition effect should take to complete, and the duration can be adjusted by changing the value to your preffered time. </dd>
-    </dt>
-    <dt>
-        <dl>Transition-timing-function</dl>
-        <dd>This property specifies the speed curve of the transition effect. It allows a transition effect to change speed over its duration.</dd>
-        <p style="font-size: 20px; text-decoration: underline;">Transition-timing function has four (4) values:</p>
-        <ul>
-            <li><b>ease:(<small>default</small>)</b> slow at the beginning, fast in the middle, slow at the end</li>
-            <li><b>ease-in:</b> starts slowly and accelerate</li>
-            <li><b>ease-out:</b> starts quickly and decelerates</li>
-            <li><b>ease-in-out:</b> starts slowly, accelerates in the middle, and decelerates at the end.</li>
-        </ul>
-    </dt>
-    <dt>
-        <dl>Transition-delay</dl>
-        <dd>This property specifies the duration to wait before starting a property's transition effect when its value changes.</dd>
-    </dt>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css/lesson 6.css" />
+    <link rel="stylesheet" href="/index.css/lesson 8.css" />
+    <title>TRANSITION IN CSS</title>
+  </head>
+  <body>
+    <h1>TRANSITION IN CSS</h1>
+    <p>
+      A <small>transition</small> is an effect that smoothly changes the value
+      of a CSS property over a specified duration. It allows for a gradual
+      transition between the initial and final states of an element's style,
+      rather than an abrupt change.
+    </p>
+    <p>Transition can be applied to various CSS properties such as color, size, position, opacity, and more, providing a visually appealing way to enhance user interactions on a webpage</p>
+    <h2><u>TYPES OF TRANSITION PROPERTIES IN CSS</u></h2>
+    <table border="2">
+        <thead>
+            <th>TRANSITION PROPERTY IN CSS</th>
+            <th>DESCRIPTION</th>
+            <th>VALUE(s)</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>transition-property</th>
+                <td>The <small>transition-property</small> specifies the CSS properties to which a transition effect should be applied. It is used to define which specific properties to be transited</td>
+                <td>
+                    <ul>
+                        <li>CSS property</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>transition-duration</th>
+                <td>The <small>transition-duration</small> specifies the duration over which a transition effect should occur when the value of a CSS property changes. It determines how long the transition animation lasts.</td>
+                <td>
+                    <ul>
+                        <li>preffered time with with unit (s or ms)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>transition-timing-function</th>
+                <td>The <small>transition-timing-function</small> defines the speed curve or timing function that specifies how intermediate values of the CSS properties being transitioned are calculated over the duration of the transition. It controls the accelaration and deceleration of the transition effect.</td>
+                <td>
+                    <ul>
+                        <li>ease</li>
+                        <li>ease-in</li>
+                        <li>ease-in-out</li>
+                        <li>linear</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>transition-delay</th>
+                <td>The <small>transition-delay</small> is a property that specifies a delay before a CSS transition effect starts when a specified property changes. It is used to control when the transition begins after the property value changes.</td>
+                <td>
+                    <ul>
+                        <li>preffered time with with unit (s or ms)</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>transition</th>
+                <td>The <small>transition</small> property is used to specify all the transition properties effect in a single declaration</td>
+                <td>
+                    <ul>
+                        <li>transition-property, transition-duration, transition-timing-function, transition-delay</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h3><u>Best Practices and Conventions of Transition Properties:</u></h3>
+    <ol>
+        <li><b>Consistency:</b> Maintain consistent transition effects across website/application to create a cohesive user experience.</li>
+        <li><b>Performance:</b> Be mindful of performance implications, especially when transitioning complex properties.</li>
+        <li><b>Use short Durations:</b> Keep transition durations short for quick feedback without delaying user interactions.</li>
+        <li><b>Avoid Excessive Animations:</b> Use transition sparingly and avoid overusing animations that can be distracting or overwhelming.</li>
+        <li><b>Progressive Enhancement:</b> Implement progressive enhancement by ensuring that key interactions remain functional even if CSS transitions are not supported.</li>
+    </ol>
+  </body>
 </html>
+
+
+

@@ -50,7 +50,7 @@
     </p>
     <h2><i>TYPES OF PSEUDO SELECTOR</i></h2>
     <h3>Pseudo-class Selectors</h3>
-    <p>A pseudo class is expressed by adding a colon (:) after a selector.</p>
+    <p>A pseudo-class is used to define a special state of an element that is not represented by simple HTML attributes. Pseudo-class are preceded by a colon ":" and target specific elements based on their interaction or element relationships.</p>
     <table border="2">
       <caption><marquee behavior="alternate" direction="right"> TYPES OF CSS PSEUDO-CLASS SELECTORS</marquee></caption>
       <thead>
@@ -59,119 +59,100 @@
       </thead>
       <tbody>
         <tr>
-          <td rowspan="2"><u>:active</td>
-          <td>
-            Represents an element (such as a button) that is being activated by
-            the user.
-          </td>
-          <tr>
-            <td> when using a mouse "activation" typically starts when the user presses down the primary mouse button</td>
-          </tr>
+          <td><u>:active</td>
+          <td>It is used to select and style an element while it is being activated or clicked by the user</td>
         </tr>
         <tr>
           <td><u>:hover</u></td>
           <td>
-            It matches when the user interacts with an element with a pointing
-            device, and does not necessarily activate it. it is generally
-            triggered when the user hovers over an element with the cursor
-            (mouse pointer)
+            It is used to select and style an element when it is hovered over by the cursor
           </td>
         </tr>
           <tr class="specify">
             <td><u>:link</u></td>
             <td>
-             It represents an element that has not yet been visited. it matches
-              every unvisited &lt; a &gt; element that has an href attribute
+             It is used to select and style links that have not been visited by the user. It targets the default state of links.
             </td>
           </tr>
           <tr>
             <td><u>:visited</u></td>
             <td>
-              It applies once the link has been visited by the user, for privacy
-              reasons, the styles that can be modified using the selector are very
-              limited
+              It is used to select and style links taht have been visited by the user. It targets the state of links that have been already been clicked on.
             </td>
           </tr>
           <tr class="specify">
             <td><u>:first-child</u></td>
             <td>
                It represents the first element among a group of sibling elements. It
-              is used to target the first-child element of its parent for styling
+              is used to select and style the first-child element of its parent for styling
             </td>
           </tr>
           <tr>
             <td><u>:last-child</u></td>
             <td>
                It represents the last element among a group of sibling elements. It is
-              used to target the last-child element of its parent for styling
+              used to select and style the last-child element of its parent for styling
             </td>
           </tr>
         <tr>
           <td><u>:nth-child</u></td>
-          <td>It matches elements based on the indexes of the elements in the child list of their parents.</td>
+          <td>It is used to select and style elements based on their position within their parent element. It allows the element to be targeted based on a specific formula. </td>
         </tr>
         <tr>
-          <td rowspan="2"><u>:empty</u></td>
-          <td> It selects any element with no content, whether text or child elements.</td>
+          <td><u>:empty</u></td>
+          <td>It is used to select and style elements that have no children, including text nodes and whitespace.</td>
         </tr>
-        <tr>
-            <td> The selectors looks for element with no child nodes text-content, or whitespace characters. The :empty does not consider an element that has spaces, tabs or line breaks to be empty.</td>
-        </tr>
+      
         <tr>
           <td><u>:disabled</u></td>
           <td>
-            It represents any disabled element. An element is
-            disabled if it can't be activated (selected, clicked on, typed
-            into.) or accepts focus. The element also has an enabled state, in
-            which it can be activated or accept focus.
+            It is used to select and style form elements that are disabled. This includes input fields, buttons, and other form element that have the <b>disabled attribute.</b>
           </td>
         </tr>
         <tr>
           <td><u>:valid</u></td>
-          <td>It represents any &lt;input&gt; or other &lt;form&gt; element whose contents validate successfully. &NonBreakingSpace;This allows to easily make valid fields adopt an appearance that helps the user confirm that their data is formatted properly.</td>
+          <td>It is used to select and style <b>form elements</b> that have passed validation.</td>
         </tr>
         <tr>
           <td><u>:invalid</u></td>
           <td>
-          It is used to select every form element which does not validate
-            according to the elements. this selectors works only for some form elements with limitation such as input elements with min and max and
-            max attributes, emails fields with legal email, or email fields with
-            a numeric value. etc.
+            It is used to select and style <b>form elements</b> that have failed validation.
           </td>
         </tr>
         <tr>
             <td><u>:checked</u></td>
-            <td>It is used to select and style radio buttons or checkbox that are checked.</td>
+            <td>It is used to select and style <b>form elements</b> that are checked or selected. It is commonly used with <i>checkboxes, radio buttons, and select dropdowns.</i></td>
         </tr>
       </tbody>
     </table>
     <!-- pseudo-element selector -->
     <h3><i>Pseudo-element Selectors</i></h3>
-    <p>A pseudo element is expressed by adding a double colon (::) after a selector</p>
+    <p>A pseudo-element selector is used to style a specific part of an element's content. Unlike <i>pseudo-class</i>, which targets states of elements or relationships between element, <i>pseudo-element</i> targets parts of elements themselves. Pseudo-elements are preceded by a double colon ": :"</p>
     <table border="2">
-       <caption><marquee behavior="alternate direction="left">PSEUDO-ELEMENT SELECTOR</marquee></caption>
+       <caption><marquee behavior="alternate" direction="left">PSEUDO-ELEMENT SELECTOR</marquee></caption>
        <thead>
         <th>Pseudo-element Selector</th>
         <th>Description</th>
       </thead>
       <tbody>
         <td><u>::before</u></td>
-        <td>It is used to selects and styles content before  the actual content in an element.</td>
+        <td>It is used to insert content before the content of the selected element. It allows the insertion of <i>texts, images</i> before an element's actual content.</td>
         <tr>
           <td><u>::after</u></td>
-          <td>It is used to selects and styles content after the actual content in an element.</td>
+          <td>It is used to insert content after the content of the selected element. It allows the insertion of <i>texts, images</i> before an element's actual content.</tr>
         </tr>
         <tr>
           <td><u>::first-line</u></td>
-          <td>It is used to add style to the first line of the specified selector.</td>
+          <td>It is used to select and style the first line of text within a block-level element. It allows styles to be specifically applied to the first line of text within an element.</td>
         </tr>
+
         <tr>
           <td><u>::first-letter</u></td>
-          <td>It is used to add style to the first letter of the specified selector.</td>
+          <td>It is used to select and style the first letter of text within a block-level element. It allows styles to be specifically applied to the first letter of text within an element.</td>
         </tr>
         <tr>
           <td><u>::selection</u></td>
-          <td>It is used to selects and styles the portion that's selected by the user (such highlighting).</td>
+          <td>It is used to style the portion of a document that has been highlighted by the user.</td>
         </tr>
         <tr>
           <td><u>::marker</u></td>

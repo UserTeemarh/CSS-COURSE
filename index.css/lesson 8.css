@@ -1,3 +1,6 @@
+html {
+  font-size: 30px;
+}
 h1 {
   text-decoration: underline;
   margin: 0;
@@ -31,18 +34,36 @@ h3 {
 fieldset {
   margin-top: 2rem;
 }
+ul li {
+  margin: 10px;
+}
 ul li ul li {
   font-size: 15px;
 }
 td ul li {
+  margin: 5px;
   font-size: 17px;
+}
+li b {
+  font-size: 24px;
+  margin-right: 5px;
+}
+ol li {
+  margin: 10px;
+  font-size: 21px;
 }
 article {
   display: flex;
   justify-content: center;
 }
+thead th {
+  text-align: center;
+}
 th {
   text-align: justify;
+}
+th[colspan] {
+  text-align: center;
 }
 
 @media (max-width: 600px) {

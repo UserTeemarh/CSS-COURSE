@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../project/Homepage.css" />
+    <!-- light tilt font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--menu icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <!-- cancel icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <title>PORTFOLIO PROJECT</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>TEEMARH</h1>
+      <nav class="menubar">
+        <ul>
+          <li><a href="#" class="hide-menubar">Home</a></li>
+          <li><a href="#" class="hide-menubar">About</a></li>
+          <li><a href="#" class="hide-menubar">Team</a></li>
+          <li><a href="#" class="hide-menubar">Skills</a></li>
+          <li><a href="#" class="hide-menubar">Contact</a></li>
+        </ul>
+        <span class="material-symbols-outlined menu"> menu </span>
+      </nav>
+      <nav class="sidebar-content">
+        <ul>
+          <li><span class="material-symbols-outlined cancel"> close </span></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- second header -->
+
+    <!-- homepage section -->
+    <main class="home-section">
+      <section class="home-section-content">
+        <div class="overlay">
+          <h1>TEEMARH LEEKAY</h1>
+          <p>I develop and design website</p>
+          <div>
+            <button>View Projects</button>
+            <button>Contact Me</button>
+          </div>
+        </div>
+        <div class="home-section-image">
+          <img src="/project/bgremove author.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim a impedit,
+      officia ab pariatur veritatis perferendis, vero doloribus quas voluptatum
+      aut eligendi, blanditiis temporibus fugiat ex non iste. Saepe, sequi!
+      Molestiae corporis dolor veniam non aliquid ratione adipisci quia
+      voluptatibus fugit incidunt illum reprehenderit rem, dolores quibusdam
+      maiores, optio ullam error magni, recusandae praesentium beatae. Libero
+      quae tempora explicabo ut. Quod sequi sit cum dolore cupiditate quae, nisi
+      exercitationem officiis. Repudiandae qui dicta sit. Aliquam harum numquam
+      eum recusandae aut nostrum non voluptates, cumque culpa enim minima
+      eligendi, corporis autem. Cumque quibusdam incidunt iste quo, repellendus
+      recusandae sed deserunt accusantium doloribus veritatis corporis ut quae
+      nostrum eligendi eos ex! Possimus nemo ullam dolorem sunt est. Explicabo
+      fugit quos omnis similique?
+    </p>
+
+    <!-- script -->
+
+    <script>
+      const cancel = document.querySelector(".cancel");
+      const menu = document.querySelector(".menu");
+      const sidebarContent = document.querySelector(".sidebar-content");
+      cancel.addEventListener("click", () => {
+        sidebarContent.style.display = "none";
+      });
+
+      cancel.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          sidebarContent.style.display = "none";
+        }
+      });
+
+      menu.addEventListener("click", () => {
+        sidebarContent.style.display = "flex";
+      });
+    </script>
+  </body>
+</html>

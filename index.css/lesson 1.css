@@ -8,16 +8,54 @@ body {
 h1 {
   text-align: center;
   text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+.rules {
+  text-align: justify;
+  margin: 0;
+  padding: 0;
 }
 h2 {
   font-size: 2rem;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
 }
 p b {
   font-size: 1rem;
   margin: 15px;
   font-style: italic;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 60.5%;
+  }
+  .rules {
+    text-align: justify;
+    margin: 5px;
+    padding: 5px;
+  }
+  h2 {
+    font-size: 0.6rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  h3 {
+    font-size: 0.6rem;
+    margin: 0;
+    padding: 0;
+  }
+  p b {
+    font-size: 0.6rem;
+    margin: 15px;
+    font-style: italic;
+  }
+
 }

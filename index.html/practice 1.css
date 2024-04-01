@@ -1,36 +1,15 @@
 body {
-  background-color: black;
-  color: white;
-  font-family: cursive;
+  font-size: 20px;
+  background-color: hsl(234, 68%, 24%);
 }
 h1 {
-  letter-spacing: 30px;
-  font-size: 60pt;
-  font-style: italic;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 100;
-  text-shadow: 2px 2px 4px #fecefd;
-}
-ul li {
-  background-color: bisque;
-  line-height: 30px;
-  font-weight: bolder;
-  text-transform: capitalize;
-}
-.test {
-  font-variant: small-caps;
-  text-decoration: underline;
-  line-height: 50px;
-  background-color: cadetblue;
-}
-a {
-  color: white;
-  text-decoration: none;
+  color: hsl(250, 50%, 65%);
+  background-color: hsla(250, 50%, 65%, 0.6);
 }
 p {
-  white-space: pre-wrap;
-  word-spacing: 30px;
+  color: #a11c5f;
 }
-dl {
-  text-indent: 30px;
+ul li {
+  color: rgb(209, 99, 36);
+  background-color: rgba(209, 99, 36, 0.3);
 }
